@@ -22,8 +22,20 @@ namespace MVC.Controllers
         }
 
 
-        
 
+
+        public IActionResult Upload()
+        {
+            var movie = new Movie();
+            movie.Id = 1000;
+            movie.Title = "Happy tigers";
+            Thread.Sleep(30);
+            _context.Add(movie);
+            _context.SaveChangesAsync();
+           // return RedirectToAction(nameof(Index));
+            return View();
+
+        }
 
         public IActionResult ExportToCSV()
         {

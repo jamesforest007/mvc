@@ -23,4 +23,12 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\download.csv" />
+    <Content Remove="wwwroot\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\download.csv" />
+    <None Include="wwwroot\excel.png" />
+  </ItemGroup>
 </Project>
